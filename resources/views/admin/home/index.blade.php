@@ -15,7 +15,7 @@
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="{{ route('mainAdmin') }}">Головна</a></li>
-                            <li class="breadcrumb-item active">Dashboard v1</li>
+                            <li class="breadcrumb-item active">Адмін панель</li>
                         </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -37,9 +37,9 @@
                                 <p>Кількисть сторінок</p>
                             </div>
                             <div class="icon">
-                                <i class="ion ion-bag"></i>
+                                <i class="ion ion-android-clipboard"></i>
                             </div>
-                            <a href="#" class="small-box-footer">Редагувати сторінки <i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="{{ route('page.index') }}" class="small-box-footer">Редагувати сторінки <i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->
@@ -52,9 +52,9 @@
                                 <p>Кількість категорій</p>
                             </div>
                             <div class="icon">
-                                <i class="ion ion-stats-bars"></i>
+                                <i class="ion ion-android-list"></i>
                             </div>
-                            <a href="#" class="small-box-footer">Редагувати категорії <i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="{{ route('category.index') }}" class="small-box-footer">Редагувати категорії <i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->

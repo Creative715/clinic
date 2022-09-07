@@ -22,12 +22,12 @@ Route::get('/', [MainController::class, 'index'])->name('main');
 
 Auth::routes();
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+//
+//Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 
-Route::middleware(['role:admin'])->prefix('inside')->group(function () {
-    Route::get('/', [DashboardController::class, 'index'])->name('mainAdmin'); // /admin
-
+Route::group(['prefix'=>'inside', 'namespace'=>'Admin', 'middleware'=>['auth', 'role:admin']], function(){
+    Route::get('/', [DashboardController::class, 'index'])->name('mainAdmin');
     Route::resource('category', CategoryController::class);
     Route::resource('page', PageController::class);
 });
