@@ -1,0 +1,443 @@
+.top-panel{
+    height: 33px;
+	padding: 5px 0;
+	position: relative;
+	background-color: #2e3138;
+	font-family: 'PT Sans',Arial,sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+    color: #c0c1c3;
+}
+
+.top-panel a{
+	color: #fff !important;
+}
+
+.top-panel a{
+	color: #c0c1c3;
+	text-decoration: none;
+}
+
+.top-panel a:hover{
+	color: #98989a;
+	transition:0.2s ease-in-out, color 0.2s ease-in-out, 0.2s ease-in-out;
+}
+
+.top-panel p{
+	padding-left: 70px;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.logo{
+	max-height: 80px;
+	margin-right: 16px;
+}
+
+.main_menu{
+	position: relative;
+	height: 78px;
+	margin-bottom: 30px;
+	padding-left: 50px;
+	z-index: 100;
+}
+
+
+.hr_blue{
+	position: relative;
+	height: 1px;
+	width: 30px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	border-bottom: solid 3px #5cb9ea;
+}
+
+.hr_black{
+	position: relative;
+	height: 1px;
+	width: 98%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-bottom: solid 1px #2e3138;
+}
+
+.sticker_body {
+	color: #ffffff;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	border-radius: 100%;
+	padding: 7px;
+	font-size: 18px;
+	font-family: 'PT Sans',Arial,sans-serif;
+	line-height: .4;
+	font-weight: 700;
+	border-width: 1px;
+	background-color: #231f20;
+	background-position: center center;
+	border-color: transparent;
+	border-style: solid;
+	z-index: 1000;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+.sticker_body:hover{
+    background-color: #5cbf48;
+	cursor: pointer;}
+
+	.sidebar{height:100%;width:0;position:fixed;z-index:100;top:0;left:0;background-color:#fff;overflow-x:hidden;transition:.5s;padding-top:60px}
+	.sidebar a{padding:8px 8px 8px 32px;text-decoration:none;font-size:25px;color:#231f20;display:block;transition:.3s}
+	.sidebar a:hover{color:#f1f1f1}
+	.sidebar .closebtn{position:absolute;top:0;right:0;font-size:36px;margin-left:50px}
+	.openbtn{position: absolute;right: 5px; font-size:28px;cursor:pointer;background-color:#fff;color:#231f20;padding:10px 15px;border:none;z-index: 1000;}
+	.openbtn:hover{background-color:#fff}
+	#main{transition:margin-left .5s;padding:16px}
+
+.text_body{
+	color: #231f20;
+	position: absolute;
+	width: auto;
+	height: 20px;
+	font-size: 15px;
+	font-family: 'PT Sans',Arial,sans-serif;
+	line-height: 18px;
+}
+
+.dropbtn {
+	color: #231f20;
+	font-weight: 700;
+	font-family: 'PT Sans',Arial,sans-serif;
+	font-size: 14px;
+	padding: 16px;
+	text-transform: uppercase;
+  }
+
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+
+  .dropdown-content {
+	display: none;
+	z-index: 1;
+  }
+
+  .dropdown-content a {
+	box-shadow: none;
+	display: block;
+  }
+
+  .dropdown-content a:hover {background-color: transparent;color: #5cb9ea;}
+
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .dropdown:hover .dropbtn {background-color: transparent;}
+
+.navbar-expand-lg .navbar-nav{
+		padding-top: 15px;
+	}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+	color: #231f20;
+	font-weight: 700;
+	font-family: 'PT Sans',Arial,sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.btn-success{
+	background-color: #5cbf48 !important;
+	border: none !important;
+}
+
+.btn-info{
+	background-color: #5cb9ea !important;
+	color: #fff !important;
+	border: none !important;
+}
+
+.treatment{
+	position: relative;
+	text-align: center;
+}
+
+.treatment h3{
+	font-size: 24px !important;
+	margin-top: 1.5rem;
+	margin-bottom: 0 !important;
+	color: #231f20;
+	font-family: 'PT Sans',Arial,sans-serif;
+	font-weight: 700;
+	text-align: left;
+}
+
+.services{
+	padding: 50px 0;
+}
+
+/* Accordion */
+.accordion{
+	border-radius: 0;
+	--bs-accordion-active-color: #231f20 !important;
+	--bs-accordion-btn-icon: url("/img/accordion_icon.png") !important;
+	--bs-accordion-btn-active-icon: url("/img/accordion_icon_active.png") !important;
+	--bs-accordion-btn-focus-box-shadow:0 !important;
+	--bs-accordion-border-width:0 !important;
+	--bs-accordion-border-radius:0 !important;
+	--bs-accordion-btn-icon-width:1.8rem !important;
+
+  }
+
+.accordion-item{
+	margin-bottom: 10px !important;
+}
+
+
+.accordion-button{
+	background-color: #E7F5FC !important;
+	font-size: 22px !important;
+	color: #231f20 !important;
+	font-weight: 700 !important;
+	font-family: 'PT Sans',Arial,sans-serif !important;
+	border: none !important;
+	padding: 20px !important;
+  }
+
+  .accordion-body{
+	background-color: #E7F5FC !important;
+  }
+
+  .accordion-body p{
+	font-size: 18px;
+	font-family: 'PT Sans',Arial,sans-serif;
+  }
+
+  .accordion-item:first-of-type .accordion-button{
+	background-color: #E7F5FC !important;
+  }
+  .btn-outline-info{
+	--bs-btn-border-color:#5cb9ea !important;
+	--bs-btn-hover-color:#fff !important;
+  }
+.about{
+	padding: 50px 0;
+	background-color: #E7F5FC;
+
+}
+
+.about p{
+	color: #666666;
+	font-size: 18px;
+	line-height: 1.4;
+	font-weight: 400;
+	font-family: 'PT Sans',Arial,sans-serif !important;
+}
+
+.sertificats{
+	color: #5cb9ea;
+	font-size: 18px;
+	font-family: 'PT Sans',Arial,sans-serif !important;
+	position: relative;
+	top: 8px;
+	left: 30px;
+	/* line-height: 1.4; */
+}
+.command a{
+	color: #5cb9ea;
+}
+.command {
+	font-weight: normal !important;
+	font-size: 26px !important;
+	line-height: 130% !important;
+	color: #222222 !important;
+}
+.appointment{
+	padding: 50px 0;
+}
+.appointment h2{
+	color:#231f20;
+	font-size: 40px;
+	font-family: 'PT Sans', sans-serif;
+  	font-weight: 700;
+  	margin-bottom: 20px;
+}
+.form_appoint{
+	position: relative;
+	background-color: #e7F5fc;
+	padding: 30px 50px;
+}
+.form_appoint a{
+	color: #5cb9ea;
+}
+.form-control{
+	padding: 1rem !important;
+	margin-bottom: 2rem;
+}
+
+.form-check-input{
+	border: solid 2px #231f20 !important;
+	padding: 10px;
+	margin-right: 10px;
+	border-radius: 0 !important;
+}
+
+  .intro {
+	background-color: #e7F5fc;
+	padding: 100px 0;
+	text-align: center;
+  }
+  .intro h2{
+	color:#231f20;
+	font-size: 40px;
+	font-family: 'PT Sans', sans-serif;
+  	font-weight: 700;
+  	margin-bottom: 20px;
+}
+.doctors{
+	padding: 50px 0;
+
+}
+
+.phone-top{
+	color:#5cbf48;top: 20px;position: absolute;right: 70px;z-index: 10000;
+}
+
+.partners{
+	padding: 50px 0;
+	background-color: #e7F5fc;
+}
+.partners h2{
+	color:#231f20;
+	font-size: 40px;
+	font-family: 'PT Sans', sans-serif;
+  	font-weight: 700;
+  	margin-bottom: 20px;
+}
+.call_us{
+	padding: 50px 0;
+}
+.call_us a{
+	color: #2E3138;
+	text-decoration: none;
+}
+.call_us h2{
+	color:#231f20;
+	font-size: 40px;
+	font-family: 'PT Sans', sans-serif;
+  	font-weight: 700;
+  	margin-bottom: 20px;
+}
+#toTop {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	background-color: #5cbf48;
+	color: white;
+	cursor: pointer;
+	padding: 10px 15px;
+	border-radius: 100%;
+  }
+
+  #toTop:hover {
+	background-color: #5cbf48;
+	opacity: .5;
+  }
+footer{
+	background-color: #2E3138;
+	padding: 90px 0;
+	color: #fff;
+}
+
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+	.logo{
+		max-height: 108px;
+		max-width: 200px;
+		margin-right: 5px;
+	}
+	.btn-main{
+		padding: 10px 25px;
+	}
+	.phone-top{
+		top: 20px !important;
+	}
+	.carousel-caption h2{
+		margin-bottom: 10px !important;
+		font-size: 36px !important;
+	  }
+	  .carousel-caption h3{
+		margin-bottom: 10px !important;
+		font-size: 38px !important;
+	  }
+	  .sertificats{
+		left: 10px;
+	  }
+}
+
+@media (max-width: 767.98px) {
+
+	.top-panel{
+	height: 80px;
+	}
+	.top-panel p{
+		padding-left: 10px;
+	}
+	.carousel-item {
+		height: 28rem;
+		background-color: #e7F5fc;
+	  }
+	  .phone-top{
+		top: 20px !important;
+	}
+}
+@media (max-width: 991.98px) {
+
+	.top-panel{
+	height: 80px;
+	}
+	.top-panel p{
+		padding-left: 10px;
+	}
+	.px-lg-4{
+		padding-left: .5rem !important;
+		padding-right: .5rem !important;
+	}
+
+}
+
+
+@media (max-width: 1199.98px) {
+
+	.top-panel{
+	height: 50px;
+	}
+	.top-panel p{
+		padding-left: 10px;
+	}
+
+}
+@media (max-width: 1399.98px) {
+	.top-panel{
+	height: 50px;
+	}
+	.top-panel p{
+		padding-left: 5px;
+	}
+	.phone-top{
+		top: 70px;
+	}
+	.sertificats{
+		left: 10px;
+	  }
+}
+
+@media (max-width: 1024px) {
+	.px-lg-4{
+		padding-left: .5rem !important;
+		padding-right: .5rem !important;
+	}
+}
