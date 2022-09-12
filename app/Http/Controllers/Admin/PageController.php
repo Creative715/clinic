@@ -47,12 +47,8 @@ class PageController extends Controller
      */
     public function store(Request $request)
     {
-        $page = new Page();
-        $page->title = $request->title;
-        $page->page_content = $request->page_content;
-        $page->description = $request->description;
-        $page->category_id = $request->category_id;
-        $page->slug = $request->slug;
+        $page = Page::create($request->all());
+
         // Images
         if ($request->file('img')) {
             $path = Storage::putFile('public', $request->file('img'));
@@ -91,11 +87,8 @@ class PageController extends Controller
     public function update(Request $request, Page $page)
     {
 
-        $page->title = $request->title;
-        $page->page_content = $request->page_content;
-        $page->description = $request->description;
-        $page->category_id = $request->category_id;
-        $page->slug = $request->slug;
+        $page->update($request->all());
+
         // Images
         if ($request->file('img')) {
             $path = Storage::putFile('public', $request->file('img'));

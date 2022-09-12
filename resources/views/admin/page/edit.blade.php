@@ -43,8 +43,12 @@
                                 @method('PUT')
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Назва</label>
+                                        <label for="exampleInputEmail1">Назва Menu</label>
                                         <input type="text" name="title" value="{{ $page['title'] }}" class="form-control" placeholder="Введіть назву" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Назва Seo</label>
+                                        <input type="text" name="seo_title" value="{{ $page['seo_title'] }}" class="form-control" placeholder="Введіть назву" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleSelectRounded0">Категорія</label>
@@ -56,8 +60,20 @@
                                         </select>
                                     </div>
                                     <div class="form-group">
+                                        <label for="exampleInputEmail1">Вступний текст</label>
+                                        <textarea id="intro" name="intro" class="form-control" rows="4">{{ $page['intro'] }}</textarea>
+                                    </div>
+                                    <div class="form-group">
                                         <label for="exampleInputEmail1">Текст сторінки</label>
                                         <textarea id="page_content" name="page_content" class="form-control" rows="4">{{ $page['page_content'] }}</textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Блок - Вартість послуги</label>
+                                        <textarea id="price_block" name="price_block" class="form-control" rows="4">{{ $page['price_block'] }}</textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Блок - Дотаква інформація</label>
+                                        <textarea id="dot_block" name="dot_block" class="form-control" rows="4">{{ $page['dot_block'] }}</textarea>
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Опис сторінки (SEO)</label>
@@ -72,10 +88,11 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Slug</label>
-                                        <input type="text" name="slug" class="form-control"  value="{{ $page['slug'] }}" placeholder="url" required>
+                                        <input type="text" name="slug" class="form-control"  value="{{ $page['slug'] }}" placeholder="url">
                                     </div>
 
                                 </div>
+
                                 <!-- /.card-body -->
                                 <div class="card-footer">
                                     <button type="submit" class="btn btn-primary">Зберегти</button>

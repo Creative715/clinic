@@ -13,6 +13,24 @@
 	color: #fff !important;
 }
 
+.breadcrumb{
+    padding: 20px 0 !important;
+    --bs-breadcrumb-item-active-color:#231f20 !important;
+    --bs-breadcrumb-divider-color:#231f20 !important;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.breadcrumb a{
+    color: #717578;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover{
+    color: #231f20;
+
+}
+
 .top-panel a{
 	color: #c0c1c3;
 	text-decoration: none;
@@ -61,6 +79,18 @@
 	border-bottom: solid 1px #2e3138;
 }
 
+.hero{
+    background-color: #e7F5fc;
+}
+
+.hero h2{
+    color:#231f20;
+	font-size: 40px;
+	font-family: 'PT Sans', sans-serif;
+  	font-weight: 700;
+    margin-top: 7rem;
+}
+
 .sticker_body {
 	color: #ffffff;
 	position: absolute;
@@ -84,9 +114,10 @@
     background-color: #5cbf48;
 	cursor: pointer;}
 
-	.sidebar{height:100%;width:0;position:fixed;z-index:100;top:0;left:0;background-color:#fff;overflow-x:hidden;transition:.5s;padding-top:60px}
-	.sidebar a{padding:8px 8px 8px 32px;text-decoration:none;font-size:25px;color:#231f20;display:block;transition:.3s}
-	.sidebar a:hover{color:#f1f1f1}
+	.sidebar{height:100%;width:0;position:fixed;z-index:100;top:0;left:0;background-color:fff;overflow-x:hidden;transition:.5s;padding-top:60px}
+	.sidebar a{padding:8px 8px 8px 32px;text-decoration:none;font-size:16px;color:#231f20;display:block;transition:.3s}
+	.sidebar a:hover{color:#888}
+    .sidebar h4 a{font-size: 25px;padding-left: 0 !important;}
 	.sidebar .closebtn{position:absolute;top:0;right:0;font-size:36px;margin-left:50px}
 	.openbtn{position: absolute;right: 5px; font-size:28px;cursor:pointer;background-color:#fff;color:#231f20;padding:10px 15px;border:none;z-index: 1000;}
 	.openbtn:hover{background-color:#fff}
@@ -350,7 +381,13 @@ footer{
 	padding: 90px 0;
 	color: #fff;
 }
+/* X-Small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
 
+
+
+/* `xs` returns only a ruleset and no media query
+... { ... } */
 
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -359,6 +396,7 @@ footer{
 		max-width: 200px;
 		margin-right: 5px;
 	}
+
 	.btn-main{
 		padding: 10px 25px;
 	}

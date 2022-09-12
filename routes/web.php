@@ -3,7 +3,6 @@
 use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\PageController;
-use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,15 +18,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [MainController::class, 'index'])->name('main');
+Route::get('page/{slug}', [MainController::class, 'page'])->name('page');
 
 Auth::routes();
 
-//
-//Route::get('/home', [HomeController::class, 'index'])->name('home');
-
-
-Route::group(['prefix'=>'inside', 'namespace'=>'Admin', 'middleware'=>['auth', 'role:admin']], function(){
+Route::group(['prefix'=>'inside', 'middleware'=>['auth', 'role:admin|user']], function(){
     Route::get('/', [DashboardController::class, 'index'])->name('mainAdmin');
     Route::resource('category', CategoryController::class);
     Route::resource('page', PageController::class);
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
