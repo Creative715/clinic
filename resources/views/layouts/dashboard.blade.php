@@ -218,59 +218,59 @@
 <script src="/dashboard/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
 <!-- AdminLTE App -->
 <script src="/dashboard/dist/js/adminlte.js"></script>
-<script src="{{ asset('dashboard/ckeditor5/build/ckeditor.js') }}"></script>
-<script src="{{ asset('dashboard/ckfinder/ckfinder.js') }}"></script>
-<script type="text/javascript">
-    ClassicEditor
-        .create( document.querySelector( '#page_content' ), {
-            ckfinder: {
-                uploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json'
-            },
-            toolbar: {
-                items: [
-                    'heading',
-                    '|',
-                    'bold',
-                    'italic',
-                    'link',
-                    'bulletedList',
-                    'numberedList',
-                    '|',
-                    'outdent',
-                    'indent',
-                    '|',
-                    'blockQuote',
-                    'insert',
-                    'imageUpload',
-                    'insertTable',
-                    'CKFinder',
-                    'mediaEmbed',
-                    'undo',
-                    'redo',
-                    'alignment'
-                ]
-            },
-            language: 'uk',
-            image: {
-                toolbar: [
-                    'imageTextAlternative',
-                    'imageStyle:full',
-                    'imageStyle:side'
-                ]
-            },
-            table: {
-                contentToolbar: [
-                    'tableColumn',
-                    'tableRow',
-                    'mergeTableCells'
-                ]
-            },
-        } )
-        .catch( function( error ) {
-            console.error( error );
-        } );
+{{--<script src="{{ asset('dashboard/ckeditor5/build/ckeditor.js') }}"></script>--}}
+{{--<script src="{{ asset('dashboard/ckfinder/ckfinder.js') }}"></script>--}}
+{{--<script type="text/javascript">--}}
+{{--    ClassicEditor--}}
+{{--        .create( document.querySelector( '#page_content' ), {--}}
+{{--            ckfinder: {--}}
+{{--                uploadUrl: '/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json'--}}
+{{--            },--}}
+{{--            toolbar: {--}}
+{{--                items: [--}}
+{{--                    'heading',--}}
+{{--                    '|',--}}
+{{--                    'bold',--}}
+{{--                    'italic',--}}
+{{--                    'link',--}}
+{{--                    'bulletedList',--}}
+{{--                    'numberedList',--}}
+{{--                    '|',--}}
+{{--                    'outdent',--}}
+{{--                    'indent',--}}
+{{--                    '|',--}}
+{{--                    'blockQuote',--}}
+{{--                    'insert',--}}
+{{--                    'imageUpload',--}}
+{{--                    'insertTable',--}}
+{{--                    'CKFinder',--}}
+{{--                    'mediaEmbed',--}}
+{{--                    'undo',--}}
+{{--                    'redo',--}}
+{{--                    'alignment'--}}
+{{--                ]--}}
+{{--            },--}}
+{{--            language: 'uk',--}}
+{{--            image: {--}}
+{{--                toolbar: [--}}
+{{--                    'imageTextAlternative',--}}
+{{--                    'imageStyle:full',--}}
+{{--                    'imageStyle:side'--}}
+{{--                ]--}}
+{{--            },--}}
+{{--            table: {--}}
+{{--                contentToolbar: [--}}
+{{--                    'tableColumn',--}}
+{{--                    'tableRow',--}}
+{{--                    'mergeTableCells'--}}
+{{--                ]--}}
+{{--            },--}}
+{{--        } )--}}
+{{--        .catch( function( error ) {--}}
+{{--            console.error( error );--}}
+{{--        } );--}}
 
-</script>
+{{--</script>--}}
 
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
 <script src="/dashboard/dist/js/pages/dashboard.js"></script>

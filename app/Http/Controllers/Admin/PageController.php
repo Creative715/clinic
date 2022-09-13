@@ -95,6 +95,7 @@ class PageController extends Controller
             $url = Storage::url($path);
             $page->img = $url;
         }
+
         $page->save();
 
         return redirect('inside/page')->withSuccess('Сторінку успішно оновлено!');

@@ -3,24 +3,31 @@
     @include('app.includes.header')
     <section id="hero" class="hero">
         <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="{{ route('main') }}">Головна</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">{{ $pages->title }}</li>
-                </ol>
-            </nav>
             <div class="row">
-                <div class="col col-lg-6">
+                <div class="col-12 col-md-6">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="{{ route('main') }}">Головна</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">{{ $pages->title }}</li>
+                        </ol>
+                    </nav>
                     <h2>{{ $pages->seo_title }}</h2>
                     <div class="hr_blue"></div>
+                    <p class="lead">{!! $pages->intro !!}</p>
                 </div>
-                <div class="col col-lg-6"><img class="img-fluid" src="{{ $pages->img }}" alt="{{ $pages->title }}" title="{{ $pages->title }}"> </div>
+                <div class="col-12 col-md-6"><img class="img-fluid" src="{{ $pages->img }}" alt="{{ $pages->seo_title }}" title="{{ $pages->seo_title }}"> </div>
             </div>
         </div>
     </section>
     <section id="page" class="page">
         <div class="container">
-        @include('app.includes.content')
+                <div class="row">
+                    @include('app.includes.content')
+                </div>
+            <div class="row">
+            <div class="my-4">{!! $pages->price_block !!}</div>
+            <div class="my-4">{!! $pages->dot_block !!}</div>
+            </div>
         </div>
     </section>
     <section id="appointment" class="appointment">

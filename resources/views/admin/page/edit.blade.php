@@ -72,7 +72,7 @@
                                         <textarea id="price_block" name="price_block" class="form-control" rows="4">{{ $page['price_block'] }}</textarea>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Блок - Дотаква інформація</label>
+                                        <label for="exampleInputEmail1">Блок - Додаткова інформація</label>
                                         <textarea id="dot_block" name="dot_block" class="form-control" rows="4">{{ $page['dot_block'] }}</textarea>
                                     </div>
                                     <div class="form-group">
@@ -85,6 +85,15 @@
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Зображення</label>
                                         <input name="img" class="form-control" type="file" value="{{ $page->img }}">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-group">
+                                            <img class="img-thumbnail" src="{{ $page->img01 }}" alt="{{ $page->seo_title }}" title="{{ $page->seo_title }}" width="150" height="auto">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Зображення (додаткове)</label>
+                                        <input name="img01" class="form-control" type="text" value="{{ $page->img01 }}">
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Slug</label>

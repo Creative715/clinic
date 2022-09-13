@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="&quot;HEALING&quot; - один з небагатьох лікувальних закладів в Україні, який спеціалізується виключно на сучасних безпечних малоінвазивних методах лікування">
+
     <meta name="author" content="Healing">
-    <title>Healing - приватна клініка, Житомир</title>
+    <title>@include('app.includes.title')</title>
+    <meta name="description" content="&quot;HEALING&quot; - один з небагатьох лікувальних закладів в Україні, який спеціалізується виключно на сучасних безпечних малоінвазивних методах лікування">
     <meta property="og:url" content="https://healing.zt.ua" />
     <meta property="og:title" content="Healing - приватна клініка, Житомир" />
     <meta property="og:description" content="&quot;HEALING&quot; - один з небагатьох лікувальних закладів в Україні, який спеціалізується виключно на сучасних безпечних малоінвазивних методах лікування" />
