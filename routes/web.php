@@ -27,7 +27,3 @@ Route::group(['prefix'=>'inside', 'middleware'=>['auth', 'role:admin|user']], fu
     Route::resource('category', CategoryController::class);
     Route::resource('page', PageController::class);
 });
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
