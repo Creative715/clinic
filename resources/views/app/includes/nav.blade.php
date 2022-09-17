@@ -15,7 +15,7 @@
                 @foreach($abouts as $about)
                     <a href="{{ route('page', $about->slug) }}">{{ $about->title }}</a>
                 @endforeach
-                <h4><a href="#">Контакти</a></h4>
+                <h4><a href="#call_us">Контакти</a></h4>
             </div>
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -44,7 +44,7 @@
                         @endforeach
                     </div>
                 </div>
-                <li><a href="#" class="nav-link px-2 link-dark">Контакти</a></li>
+                <li><a href="#call_us" class="nav-link px-2 link-dark">Контакти</a></li>
             </ul>
         </div>
 

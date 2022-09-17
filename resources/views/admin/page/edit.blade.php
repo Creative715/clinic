@@ -43,11 +43,11 @@
                                 @method('PUT')
                                 <div class="card-body">
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Назва Menu</label>
+                                        <label>Назва Menu</label>
                                         <input type="text" name="title" value="{{ $page['title'] }}" class="form-control" placeholder="Введіть назву" required>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Назва Seo</label>
+                                        <label>Назва Seo</label>
                                         <input type="text" name="seo_title" value="{{ $page['seo_title'] }}" class="form-control" placeholder="Введіть назву" required>
                                     </div>
                                     <div class="form-group">
@@ -60,43 +60,38 @@
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Вступний текст</label>
+                                        <label>Вступний текст</label>
                                         <textarea id="intro" name="intro" class="form-control" rows="4">{{ $page['intro'] }}</textarea>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Текст сторінки</label>
+                                        <label>Текст сторінки</label>
                                         <textarea id="page_content" name="page_content" class="form-control" rows="4">{{ $page['page_content'] }}</textarea>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Блок - Вартість послуги</label>
+                                        <label>Блок - Вартість послуги</label>
                                         <textarea id="price_block" name="price_block" class="form-control" rows="4">{{ $page['price_block'] }}</textarea>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Блок - Додаткова інформація</label>
+                                        <label>Блок - Додаткова інформація</label>
                                         <textarea id="dot_block" name="dot_block" class="form-control" rows="4">{{ $page['dot_block'] }}</textarea>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Опис сторінки (SEO)</label>
+                                        <label>Блок - Діагностика</label>
+                                        <textarea id="diagnostic" name="diagnostic" class="form-control" rows="4">{{ $page['diagnostic'] }}</textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Опис сторінки (SEO)</label>
                                         <input type="text" name="description" value="{{ $page['description'] }}" class="form-control" id="exampleInputName" placeholder="Введіть опис" required>
                                     </div>
                                     <div class="form-group">
                                         <img class="img-thumbnail" src="{{ $page->img }}" alt="{{ $page->title }}" title="{{ $page->title }}" width="150" height="auto">
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Зображення</label>
+                                        <label>Зображення</label>
                                         <input name="img" class="form-control" type="file" value="{{ $page->img }}">
                                     </div>
                                     <div class="form-group">
-                                        <div class="form-group">
-                                            <img class="img-thumbnail" src="{{ $page->img01 }}" alt="{{ $page->seo_title }}" title="{{ $page->seo_title }}" width="150" height="auto">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Зображення (додаткове)</label>
-                                        <input name="img01" class="form-control" type="text" value="{{ $page->img01 }}">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Slug</label>
+                                        <label>Slug</label>
                                         <input type="text" name="slug" class="form-control"  value="{{ $page['slug'] }}" placeholder="url">
                                     </div>
 

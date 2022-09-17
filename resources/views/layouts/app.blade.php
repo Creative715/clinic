@@ -75,7 +75,11 @@
         document.documentElement.scrollTop = 0;
     }
 </script>
-<script src="{{ asset('/js/bootstrap.bundle.js') }}"></script>
+<script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+</script>
+<script src="{{ asset('/js/bootstrap.bundle.min.js') }}"></script>
 
 
 </body>

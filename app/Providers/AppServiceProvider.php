@@ -34,10 +34,19 @@ class AppServiceProvider extends ServiceProvider
         View::composer('app.includes.nav', function ($view){
             $view->with('services', Page::all()->where('category_id', 1));
         });
+        View::composer('app.includes.footer', function ($view){
+            $view->with('services', Page::all()->where('category_id', 1));
+        });
         View::composer('app.includes.nav', function ($view){
             $view->with('consults', Page::all()->where('category_id', 2));
         });
+        View::composer('app.includes.footer', function ($view){
+            $view->with('consults', Page::all()->where('category_id', 2));
+        });
         View::composer('app.includes.nav', function ($view){
+            $view->with('abouts', Page::all()->where('category_id', 3));
+        });
+        View::composer('app.includes.footer', function ($view){
             $view->with('abouts', Page::all()->where('category_id', 3));
         });
     }

@@ -3,9 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Page;
-use App\Models\Category;
-use Illuminate\Http\Request;
-use function GuzzleHttp\Promise\all;
 
 class MainController extends Controller
 {
@@ -20,10 +17,15 @@ class MainController extends Controller
     public function page($slug)
     {
         $pages = Page::all()->where('slug',$slug)->first();
-        return view('app.page',
-        [
+        return view('app.page', [
             'pages' => $pages
         ]);
+    }
+
+    public function child()
+    {
+        $pages = Page::all()->where('id', 18)->first();
+        return view('app.child', compact('pages'));
     }
 
 }

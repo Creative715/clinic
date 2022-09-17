@@ -3,36 +3,34 @@
     <div class="container">
       <div class="row">
         <div class="col-md-3">
-          <a href="/"><img src="{{ asset('img/LOGO2.webp') }}" alt="Приватна клініка Healing" title="приватна клініка Healing"></a><br><br>
+          <a href="{{ url('/') }}"><img src="{{ asset('img/LOGO2.webp') }}" alt="Приватна клініка Healing" title="приватна клініка Healing"></a><br><br>
           <p class="small">2022, &copy; приватна клініка “Healing"</p>
         </div>
         <div class="col-md-3">
           <h3>Послуги</h3>
+
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Артроскопія</li>
-            <li class="list-group-item">МРТ і КТ</li>
-            <li class="list-group-item">Ортопедія та травматологія</li>
-            <li class="list-group-item">Нейрохірургія</li>
-            <li class="list-group-item">Дитяча хірургія</li>
+              @foreach($services as $service)
+                  <li class="list-group-item"><a href="{{ route('page', $service->slug) }}"> {{ $service->title }}</a></li>
+              @endforeach
           </ul>
+
         </div>
         <div class="col-md-3">
           <h3>Консультація</h3>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Ортопеда-травматолога</li>
-            <li class="list-group-item">Нейрохірурга</li>
-            <li class="list-group-item">Ревматолога</li>
-            <li class="list-group-item">Невропатолога</li>
-            <li class="list-group-item">Дитячого лікаря-хірурга</li>
+              @foreach($consults as $consult)
+            <li class="list-group-item"><a href="{{ route('page', $consult->slug) }}"> {{ $consult->title }}</a></li>
+              @endforeach
           </ul>
         </div>
         <div class="col-md-3">
           <h3>Про нас</h3>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Про центр</li>
-            <li class="list-group-item">Клініка-партнер</li>
-            <li class="list-group-item">Лікарі</li>
-            <li class="list-group-item">Контакти</li>
+              @foreach($abouts as $about)
+                  <li class="list-group-item"><a href="{{ route('page', $about->slug) }}"> {{ $about->title }}</a></li>
+              @endforeach
+            <li class="list-group-item"><a href="#call_us">Контакти</a></li>
           </ul>
           <button onclick="topFunction()" id="toTop" title="До верху"><i class="fa-solid fa-arrow-up fa-2x"></i></button>
       </div>

@@ -10,6 +10,11 @@
   z-index: 10;
   color: #000;
 }
+.carousel-caption h4{
+    margin-bottom: 8rem;
+}
+
+
 .carousel-caption1 {
   bottom: 3rem;
   text-align: center;

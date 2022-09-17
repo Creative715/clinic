@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [MainController::class, 'index'])->name('main');
 Route::get('page/{slug}', [MainController::class, 'page'])->name('page');
+Route::get('zdorova-dytyna', [MainController::class, 'child'])->name('child');
 
 Auth::routes();
 

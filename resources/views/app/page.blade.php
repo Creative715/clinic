@@ -15,7 +15,7 @@
                     <div class="hr_blue"></div>
                     <p class="lead">{!! $pages->intro !!}</p>
                 </div>
-                <div class="col-12 col-md-6"><img class="img-fluid" src="{{ $pages->img }}" alt="{{ $pages->seo_title }}" title="{{ $pages->seo_title }}"> </div>
+                <div class="col-12 col-md-6 text-center"><img class="img-fluid" src="{{ $pages->img }}" alt="{{ $pages->seo_title }}" title="{{ $pages->seo_title }}"> </div>
             </div>
         </div>
     </section>
@@ -30,6 +30,19 @@
             </div>
         </div>
     </section>
+    @if ( !empty($pages->diagnostic))
+    <section id="mrt-kt" class="mrt-kt">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center"><img style="margin-top: -90px" src="/public/img/portrait-young-medic.webp" alt="МРТ КТ в Житомирі"></div>
+                <div class="col-md-6 align-self-center">
+                    <p>{{ $pages->diagnostic }}</p>
+                    <button style="width: 100%;" type="button" class="btn btn-success btn-block py-md-2 px-md-2 px-sm-2 px-lg-4 my-md-0 my-sm-2 "><i class="fa-solid fa-location-dot"></i> м. Житомир, Чуднівське шосе 1</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    @endif
     <section id="appointment" class="appointment">
         <div class="container">
             <div class="row featurette">

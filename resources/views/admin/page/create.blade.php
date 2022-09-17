@@ -58,7 +58,7 @@
                                         </select>
                                     </div>
                                     <div class="form-group">
-                                        <label for="exampleInputEmail1">Вступний текст</label>
+                                        <label for="intro">Вступний текст</label>
                                         <textarea id="intro" name="intro" class="form-control" rows="4"></textarea>
                                     </div>
                                     <div class="form-group">
@@ -74,16 +74,16 @@
                                         <textarea id="dot_block" name="dot_block" class="form-control" rows="4"></textarea>
                                     </div>
                                     <div class="form-group">
+                                        <label for="diagnostic">Блок - Діагностика</label>
+                                        <textarea id="diagnostic" name="diagnostic" class="form-control" rows="4"></textarea>
+                                    </div>
+                                    <div class="form-group">
                                         <label for="exampleInputEmail1">Опис сторінки (SEO)</label>
                                         <input type="text" name="description" class="form-control" id="exampleInputName" placeholder="Введіть опис" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Зображення</label>
                                         <input name="img" class="form-control" type="file">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="exampleInputEmail1">Зображення (додаткове)</label>
-                                        <input name="img01" class="form-control" type="text">
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Slug</label>
