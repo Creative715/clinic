@@ -1,2 +1,0 @@
-{{ $pages->seo_title }}
-

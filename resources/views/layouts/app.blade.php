@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="author" content="Healing">
-    <title>@include('app.includes.title')</title>
-    <meta name="description" content="&quot;HEALING&quot; - один з небагатьох лікувальних закладів в Україні, який спеціалізується виключно на сучасних безпечних малоінвазивних методах лікування">
+    <title>{{ $title ?? 'Healing - приватна клініка. Житомир' }}</title>
+    <meta name="description" content="{{ $description ?? '' }}">
     <meta property="og:url" content="https://healing.zt.ua" />
     <meta property="og:title" content="Healing - приватна клініка, Житомир" />
     <meta property="og:description" content="&quot;HEALING&quot; - один з небагатьох лікувальних закладів в Україні, який спеціалізується виключно на сучасних безпечних малоінвазивних методах лікування" />
@@ -16,11 +16,12 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <!-- custom styles for healing clinic -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="shortcut icon" href="{{ asset('img/favicon.ico') }}">
-{{--    <link rel="shortcut icon" href="/img/favicon.ico">--}}
-    <link href="{{ asset('/css/healing.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ asset('/img/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ asset('/css/healing.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/body_style.min.css') }}">
     <!-- bootstap styles -->
-    <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
+     <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
     <!-- custom styles for carousel -->
     <link href="{{ asset('/css/carousel.css') }}" rel="stylesheet">
     <!-- fontawesome styles -->
@@ -40,8 +41,15 @@
             }
         }
     </style>
+
 </head>
+<body>
 @yield('content')
+<script src="{{ asset('/js/bootstrap.bundle.min.js') }}"></script>
+<script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
 <script>
     function openNav() {
         document.getElementById("mySidebar").style.width = "250px";
@@ -75,11 +83,21 @@
         document.documentElement.scrollTop = 0;
     }
 </script>
-<script>
-    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-</script>
-<script src="{{ asset('/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="{{asset('/js/bootstrap-datepicker.min.js')}}"></script>
+    <script src="{{ asset('/js/bootstrap-datepicker.uk.min.js') }}"></script>
+    <script src="{{ asset('js/healing-script.js') }}"></script>
+    @vite('resources/js/app.js')
+    <script type="text/javascript">
+        $(function() {
+            $('#datepicker').datepicker({
+                format: 'dd.mm.yyyy',
+                language: 'uk',
+                autoclose: true,
+                startDate: '-3d'
+            });
+        });
+    </script>
 
 
 </body>

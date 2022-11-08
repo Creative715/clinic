@@ -9,4 +9,8 @@ class Category extends Model
 {
     use HasFactory;
 
+    public function pages()
+    {
+        return $this->hasMany(Page::class);
+    }
 }

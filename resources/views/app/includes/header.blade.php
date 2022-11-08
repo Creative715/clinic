@@ -12,7 +12,7 @@
             </div>
             <div class="col col-md-3 col-sm-2">
                 <div class="row">
-                    <div class="col text-center"><a href="/">UA</a> / <a href="#">RU</a></div>
+                    <div class="col text-center"><a href="{{ url('/') }}">UA</a> / <a href="{{ route('ro') }}">RU</a></div>
                     <div class="col"><p><a target="_blank" href="https://www.facebook.com/healing.zt.ua/"><i class="fa-brands fa-facebook float-end" style="color:#fff; font-size: 22px;"></i></a></p>
                     </div>
                 </div>

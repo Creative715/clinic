@@ -6,20 +6,16 @@ use App\Models\Page;
 
 class MainController extends Controller
 {
-    public function index(){
-
+    function index()
+    {
         $pages = Page::first();
-        return view('app.main', [
-            'pages' => $pages
-        ]);
+        return view('app.main', compact('pages'));
     }
 
     public function page($slug)
     {
-        $pages = Page::all()->where('slug',$slug)->first();
-        return view('app.page', [
-            'pages' => $pages
-        ]);
+        $pages = Page::all()->where('slug', $slug)->first();
+        return view('app.page', compact('pages'));
     }
 
     public function child()
@@ -27,5 +23,4 @@ class MainController extends Controller
         $pages = Page::all()->where('id', 18)->first();
         return view('app.child', compact('pages'));
     }
-
 }

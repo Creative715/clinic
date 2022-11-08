@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\Models\Category;
 use App\Models\Page;
+use App\Models\Pagero;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\View;
 
@@ -31,23 +32,13 @@ class AppServiceProvider extends ServiceProvider
 
     public function menuLoad()
     {
-        View::composer('app.includes.nav', function ($view){
+        View::composer(['app.includes.nav', 'app.includes.footer', 'app.includes.nav_ro', 'app.includes.footer_ro'], function ($view){
             $view->with('services', Page::all()->where('category_id', 1));
-        });
-        View::composer('app.includes.footer', function ($view){
-            $view->with('services', Page::all()->where('category_id', 1));
-        });
-        View::composer('app.includes.nav', function ($view){
             $view->with('consults', Page::all()->where('category_id', 2));
-        });
-        View::composer('app.includes.footer', function ($view){
-            $view->with('consults', Page::all()->where('category_id', 2));
-        });
-        View::composer('app.includes.nav', function ($view){
             $view->with('abouts', Page::all()->where('category_id', 3));
-        });
-        View::composer('app.includes.footer', function ($view){
-            $view->with('abouts', Page::all()->where('category_id', 3));
+            $view->with('services1', Pagero::all()->where('category_id', 1));
+            $view->with('consults1', Pagero::all()->where('category_id', 2));
+            $view->with('abouts1', Pagero::all()->where('category_id', 3));
         });
     }
 
