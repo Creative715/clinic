@@ -15,7 +15,7 @@ class Page extends Model
 
     public function setSlugAttribute($value)
     {
-        $this->attributes['slug'] = Str::slug( mb_substr($this->title, 0, 100) . "-" );
+        $this->attributes['slug'] = Str::slug(mb_substr($this->title, 0, 100) . "-");
     }
 
     public function category(): BelongsTo

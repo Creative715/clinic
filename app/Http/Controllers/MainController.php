@@ -2,14 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\News;
 use App\Models\Page;
+use App\Models\Testimonial;
 
 class MainController extends Controller
 {
     function index()
     {
         $pages = Page::first();
-        return view('app.main', compact('pages'));
+        $news = News::latest()->limit(3)->get();
+        $testimonials = Testimonial::latest()->limit(3)->get();
+        return view('app.main', [
+            'pages' => $pages,
+            'news' => $news,
+            'testimonials' => $testimonials
+        ]);
     }
 
     public function page($slug)
@@ -17,6 +25,7 @@ class MainController extends Controller
         $pages = Page::all()->where('slug', $slug)->first();
         return view('app.page', compact('pages'));
     }
+
 
     public function child()
     {

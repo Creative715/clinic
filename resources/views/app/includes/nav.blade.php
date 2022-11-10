@@ -3,6 +3,7 @@
         <div class="d-block d-lg-none">
             <div id="mySidebar" class="sidebar">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <h4><a href="{{ url('/') }}">Головна</a></h4>
                 <h4>Послуги</h4>
                 @foreach($services as $service)
                     <a href="{{ route('page', $service->slug) }}">{{ $service->title }}</a>
@@ -15,6 +16,7 @@
                 @foreach($abouts as $about)
                     <a href="{{ route('page', $about->slug) }}">{{ $about->title }}</a>
                 @endforeach
+                <h4><a href="{{ route('testimonial.index') }}">Відгуки</a></h4>
                 <h4><a href="#call_us">Контакти</a></h4>
             </div>
         </div>
@@ -44,6 +46,7 @@
                         @endforeach
                     </div>
                 </div>
+                <li><a href="{{ route('testimonial.index') }}" class="nav-link px-2 link-dark">Відгуки</a></li>
                 <li><a href="#call_us" class="nav-link px-2 link-dark">Контакти</a></li>
             </ul>
         </div>
