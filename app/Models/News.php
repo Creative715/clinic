@@ -9,11 +9,11 @@ use Illuminate\Support\Str;
 class News extends Model
 {
     use HasFactory;
-    protected $fillable = ['title', 'content', 'img', 'slug'];
+    protected $fillable = ['title', 'content', 'description', 'img', 'slug'];
 
     public function setSlugAttribute($value)
     {
-        $this->attributes['slug'] = Str::slug(mb_substr($this->title, 0, 100) . "-");
+        $this->attributes['slug'] = Str::slug(mb_substr($this->title, 0, 200) . "-");
     }
 
     public function scopeAllPaginate($query, $numbers)
@@ -22,7 +22,7 @@ class News extends Model
     }
     public function getContentPreview()
     {
-        return Str::limit($this->content, 120);
+        return Str::limit($this->content, 150);
     }
     public function createdAtForHumans()
     {

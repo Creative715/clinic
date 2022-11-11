@@ -8,7 +8,7 @@ class NewsController extends Controller
 {
     public function index()
     {
-        $news = News::allPaginate(8);
+        $news = News::allPaginate(12);
         return view('app.news.index', compact('news'));
     }
 

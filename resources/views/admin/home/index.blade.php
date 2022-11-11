@@ -62,12 +62,27 @@
                         <!-- small box -->
                         <div class="small-box bg-warning">
                             <div class="inner">
-                                <h3>44</h3>
+                                <h3>{{ $doctors_count }}</h3>
 
-                                <p>User Registrations</p>
+                                <p>Лікарі</p>
                             </div>
                             <div class="icon">
                                 <i class="ion ion-person-add"></i>
+                            </div>
+                            <a href="{{ route('doctor.index') }}" class="small-box-footer">Редагувати лікарів <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- ./col -->
+                    <div class="col-lg-3 col-6">
+                        <!-- small box -->
+                        <div class="small-box bg-danger">
+                            <div class="inner">
+                                <h3>{{ $testimonials_count }}</h3>
+
+                                <p>Відгуки</p>
+                            </div>
+                            <div class="icon">
+                                <i class="ion ion-pie-graph"></i>
                             </div>
                             <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                         </div>
@@ -77,14 +92,14 @@
                         <!-- small box -->
                         <div class="small-box bg-danger">
                             <div class="inner">
-                                <h3>65</h3>
+                                <h3>{{ $news_count }}</h3>
 
-                                <p>Unique Visitors</p>
+                                <p>Новини</p>
                             </div>
                             <div class="icon">
                                 <i class="ion ion-pie-graph"></i>
                             </div>
-                            <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="{{ route('news.index') }}" class="small-box-footer">Редагувати новини<i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->
