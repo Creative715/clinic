@@ -3,6 +3,7 @@
     @include('app.includes.header')
     @include('app.includes.carousel')
     @include('app.includes.content')
+    @include('app.includes.doctors')
     @include('app.includes.news')
     @include('app.includes.testimonial')
     @include('app.includes.call_us')

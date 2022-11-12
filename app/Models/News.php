@@ -20,9 +20,13 @@ class News extends Model
     {
         return $query->latest()->paginate($numbers);
     }
+    public function getTitlePreview()
+    {
+        return Str::limit($this->title, 40);
+    }
     public function getContentPreview()
     {
-        return Str::limit($this->content, 150);
+        return Str::limit($this->content, 80);
     }
     public function createdAtForHumans()
     {

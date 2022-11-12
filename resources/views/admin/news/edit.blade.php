@@ -1,5 +1,5 @@
 @extends('layouts.dashboard')
-@section('title', 'Редагувати сторінку')
+@section('title', 'Редагувати новини')
 @section('content')
     <!-- Content Wrapper. Contains news content -->
     <div class="content-wrapper">

@@ -47,11 +47,11 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Фото</label>
-                                        <input name="avatar" class="form-control" type="file">
+                                        <input name="img" class="form-control" type="file">
                                     </div>
                                     <div class="form-group">
-                                        <label for="specialty">Спеціальність</label>
-                                        <input type="text" name="specialty" class="form-control" placeholder="Спеціальність" required>
+                                        <label>Спеціальність</label>
+                                        <input type="text" name="speciality" class="form-control" placeholder="Спеціальність" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Іноформація про лікаря</label>
@@ -60,6 +60,10 @@
                                     <div class="form-group">
                                         <label>Короткий опис для (SEO)</label>
                                         <input type="text" name="description" class="form-control" id="exampleInputName" placeholder="Введіть опис" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Адреса сторінки (url)</label>
+                                        <input type="text" name="slug" class="form-control"  placeholder="Додається автоматично" readonly>
                                     </div>
 
                                 </div>

@@ -44,7 +44,7 @@ class DoctorController extends Controller
         if ($request->file('img')) {
             $path = Storage::putFile('public', $request->file('img'));
             $url = Storage::url($path);
-            $doctor->avatar = $url;
+            $doctor->img = $url;
         }
 
         $doctor->save();
@@ -84,14 +84,12 @@ class DoctorController extends Controller
     public function update(Request $request, Doctor $doctor)
     {
         $doctor->update($request->all());
-
         // Avatar
         if ($request->file('img')) {
             $path = Storage::putFile('public', $request->file('img'));
             $url = Storage::url($path);
-            $doctor->avatar = $url;
+            $doctor->img = $url;
         }
-
         $doctor->save();
 
         return redirect('inside/doctor')->withSuccess('Запис успішно оновлено!');

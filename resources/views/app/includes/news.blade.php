@@ -6,10 +6,12 @@
             @foreach($news as $new)
                 <div class="col col-md-4">
                     <div class="card">
-                        <img src="{{ $new->img }}" class="card-img-top" title="{{ $new->title }}"
+                        <img src="{{ $new->img }}" class="card-img-top"
+                             title="{{ $new->title }}"
                              alt="{{ $new->title }}">
                         <div class="card-body">
-                            <h3 class="card-title">{{ $new->title }}</h3>
+                            <a style="color: #0a001f; text-decoration: none;" href="{{ route('news.more', $new->slug) }}"><h3
+                                    class="card-title">{{ $new->getTitlePreview() }}</h3></a>
                             <strong> Додано: {{ $new->createdAtForHumans() }}</strong>
                             <p class="card-text">{!! $new->getContentPreview() !!}</p>
                             <hr>

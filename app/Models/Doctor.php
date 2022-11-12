@@ -10,10 +10,15 @@ class Doctor extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'specialty', 'avatar', 'content', 'description', 'slug'];
+    protected $fillable = ['name', 'speciality', 'img', 'content', 'description', 'slug'];
 
     public function setSlugAttribute($value)
     {
         $this->attributes['slug'] = Str::slug(mb_substr($this->name, 0, 250) . "-");
+    }
+
+    public function getContentPreview()
+    {
+        return Str::limit($this->content, 100);
     }
 }

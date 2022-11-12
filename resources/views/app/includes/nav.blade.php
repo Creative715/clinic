@@ -44,6 +44,8 @@
                         @foreach($abouts as $about)
                             <a class="dropdown-item" href="{{ route('page', $about->slug) }}">{{ $about->title }}</a>
                         @endforeach
+                            <a class="dropdown-item" href="{{ route('doctors') }}">Лікарі</a>
+                            <a class="dropdown-item" href="{{ route('news') }}">Новини</a>
                     </div>
                 </div>
                 <li><a href="{{ route('testimonial.index') }}" class="nav-link px-2 link-dark">Відгуки</a></li>

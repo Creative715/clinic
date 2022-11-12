@@ -16,8 +16,8 @@
                     <p class="lead">Найсвіжіші новини медицини в Україні та світі</p>
                 </div>
                 <div class="col-12 col-md-6 text-center"><img class="img-fluid" src="{{ asset('img/healing.jpg') }}"
-                                                              alt="Відгуки про клініку Хілінг"
-                                                              title="Відгуки про клініку Хілінг"></div>
+                                                              alt="Новини медицини - клінікa Хілінг"
+                                                              title="Новини медицини - клінікa Хілінг"></div>
 
             </div>
         </div>
