@@ -35,6 +35,8 @@
                         </li>
                     @endforeach
                     <li class="list-group-item"><a class="dropdown-item" href="{{ route('doctors') }}">Лікарі</a></li>
+                    <li class="list-group-item"><a class="dropdown-item"
+                                                   href="{{ route('testimonial.index') }}">Відгуки</a></li>
                     <li class="list-group-item"><a class="dropdown-item" href="{{ route('news') }}">Новини</a></li>
                     <li class="list-group-item"><a href="#call_us">Контакти</a></li>
                 </ul>

@@ -15,8 +15,10 @@
         <label for="phone" class="form-label">Ваш номер телефону</label>
         <input type="tel" name="phone" id="phone" class="form-control" placeholder="+38(_ _) _ _ _ - _ _ - _ _">
         <label for="massage" class="form-label">Що вас турбує?</label>
-        <textarea class="form-control" name="massage" id="massage" cols="30" rows="5" placeholder="Опишіть симптоми або напишіть до якого лікаря ви хочете потрапити ..."></textarea>
-        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input" required>
+        <textarea class="form-control" name="massage" id="massage" cols="30" rows="5"
+                  placeholder="Опишіть симптоми або напишіть до якого лікаря ви хочете потрапити ..."></textarea>
+        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input"
+               required>
         <label for="exampleFormControlInput1" class="form-label">Я згоден на <a href="#">обробку персональних даних</a></label>
         <button style="width: 100%;" class="btn btn-lg btn-success btn-main" href="#">Записатися</button>
     </div>

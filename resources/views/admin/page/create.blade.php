@@ -43,15 +43,18 @@
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Назва Menu</label>
-                                        <input type="text" name="title" class="form-control" placeholder="Введіть назву" required>
+                                        <input type="text" name="title" class="form-control" placeholder="Введіть назву"
+                                               required>
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Назва Seo</label>
-                                        <input type="text" name="seo_title" class="form-control" placeholder="Введіть назву" required>
+                                        <input type="text" name="seo_title" class="form-control"
+                                               placeholder="Введіть назву" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleSelectRounded0">Категорія</label>
-                                        <select name="category_id" class="custom-select rounded-0" id="exampleSelectRounded0">
+                                        <select name="category_id" class="custom-select rounded-0"
+                                                id="exampleSelectRounded0">
                                             @foreach($categories as $category)
                                                 <option value="{{ $category['id'] }}">{{ $category['title'] }}</option>
                                             @endforeach
@@ -63,23 +66,28 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Текст сторінки</label>
-                                        <textarea id="page_content" name="page_content" class="form-control" rows="4"></textarea>
+                                        <textarea id="page_content" name="page_content" class="form-control"
+                                                  rows="4"></textarea>
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Блок - Вартість послуги</label>
-                                        <textarea id="price_block" name="price_block" class="form-control" rows="4"></textarea>
+                                        <textarea id="price_block" name="price_block" class="form-control"
+                                                  rows="4"></textarea>
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Блок - Додаткова інформація</label>
-                                        <textarea id="dot_block" name="dot_block" class="form-control" rows="4"></textarea>
+                                        <textarea id="dot_block" name="dot_block" class="form-control"
+                                                  rows="4"></textarea>
                                     </div>
                                     <div class="form-group">
                                         <label for="diagnostic">Блок - Діагностика</label>
-                                        <textarea id="diagnostic" name="diagnostic" class="form-control" rows="4"></textarea>
+                                        <textarea id="diagnostic" name="diagnostic" class="form-control"
+                                                  rows="4"></textarea>
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Опис сторінки (SEO)</label>
-                                        <input type="text" name="description" class="form-control" id="exampleInputName" placeholder="Введіть опис" required>
+                                        <input type="text" name="description" class="form-control" id="exampleInputName"
+                                               placeholder="Введіть опис" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Зображення</label>
@@ -87,7 +95,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Slug</label>
-                                        <input type="text" name="slug" class="form-control"  placeholder="url">
+                                        <input type="text" name="slug" class="form-control" placeholder="url">
                                     </div>
 
                                 </div>

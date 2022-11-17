@@ -8,7 +8,8 @@
                             @csrf
                             <div class="form-group">
                                 <label for="exampleFormControlInput1" class="form-label">Как вас зовут?</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="Иван Кравченко">
+                                <input type="text" class="form-control" id="name" name="name"
+                                       placeholder="Иван Кравченко">
                                 <label for="datepicker" class="form-label">Удобная дата</label>
                                 <div class="input-group date" id="datepicker">
                                     <input placeholder="01.01.2022" type="text" name="date" class="form-control">
@@ -19,12 +20,18 @@
                         </span>
                                 </div>
                                 <label for="phone" class="form-label">Ваш номер телефона</label>
-                                <input type="tel" name="phone" id="phone" class="form-control" placeholder="+38(_ _) _ _ _ - _ _ - _ _">
+                                <input type="tel" name="phone" id="phone" class="form-control"
+                                       placeholder="+38(_ _) _ _ _ - _ _ - _ _">
                                 <label for="massage" class="form-label">что вас беспокоит?</label>
-                                <textarea class="form-control" name="massage" id="massage" cols="30" rows="5" placeholder="Опишите симптомы или напишите к какому врачу хотите обратится ..."></textarea>
-                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input" required>
-                                <label for="exampleFormControlInput1" class="form-label">Я согласен на <a href="#">оброботку персональних данных</a></label>
-                                <button style="width: 100%;" class="btn btn-lg btn-success btn-main" href="#">Записаться</button>
+                                <textarea class="form-control" name="massage" id="massage" cols="30" rows="5"
+                                          placeholder="Опишите симптомы или напишите к какому врачу хотите обратится ..."></textarea>
+                                <input class="form-check-input mt-0" type="checkbox" value=""
+                                       aria-label="Checkbox for following text input" required>
+                                <label for="exampleFormControlInput1" class="form-label">Я согласен на <a href="#">оброботку
+                                        персональних данных</a></label>
+                                <button style="width: 100%;" class="btn btn-lg btn-success btn-main" href="#">
+                                    Записаться
+                                </button>
                             </div>
                         </form>
                     </div>

@@ -43,7 +43,8 @@
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Назва</label>
-                                        <input type="text" name="title" class="form-control" id="exampleInputName" placeholder="Введіть назву" required>
+                                        <input type="text" name="title" class="form-control" id="exampleInputName"
+                                               placeholder="Введіть назву" required>
                                     </div>
                                 </div>
                                 <!-- /.card-body -->

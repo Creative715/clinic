@@ -38,16 +38,19 @@
                             </div>
                             <!-- /.card-header -->
                             <!-- form start -->
-                            <form enctype="multipart/form-data" action="{{ route('doctor.update', $doctor['id']) }}" method="post">
+                            <form enctype="multipart/form-data" action="{{ route('doctor.update', $doctor['id']) }}"
+                                  method="post">
                                 @csrf
                                 @method('PUT')
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Прізвище та Ім'я</label>
-                                        <input type="text" name="name" value="{{ $doctor['name'] }}" class="form-control" placeholder="Введіть прізвище та ім'я" required>
+                                        <input type="text" name="name" value="{{ $doctor['name'] }}"
+                                               class="form-control" placeholder="Введіть прізвище та ім'я" required>
                                     </div>
                                     <div class="form-group">
-                                        <img class="img-thumbnail" src="{{ $doctor->img }}" alt="{{ $doctor->name }}" title="{{ $doctor->name }}" width="150" height="auto">
+                                        <img class="img-thumbnail" src="{{ $doctor->img }}" alt="{{ $doctor->name }}"
+                                             title="{{ $doctor->name }}" width="150" height="auto">
                                     </div>
                                     <div class="form-group">
                                         <label>Фото</label>
@@ -55,18 +58,23 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Спеціальність</label>
-                                        <input type="text" name="speciality" value="{{ $doctor['speciality'] }}" class="form-control" placeholder="Спеціальність" required>
+                                        <input type="text" name="speciality" value="{{ $doctor['speciality'] }}"
+                                               class="form-control" placeholder="Спеціальність" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Іноформація про лікаря</label>
-                                        <textarea id="content" name="content" class="form-control" rows="4">{{ $doctor['content'] }}</textarea>
+                                        <textarea id="content" name="content" class="form-control"
+                                                  rows="4">{{ $doctor['content'] }}</textarea>
                                     </div>
                                     <div class="form-group">
                                         <label>Опис сторінки (SEO)</label>
-                                        <input type="text" name="description" value="{{ $doctor['description'] }}" class="form-control" id="exampleInputName" placeholder="Введіть опис" required>
+                                        <input type="text" name="description" value="{{ $doctor['description'] }}"
+                                               class="form-control" id="exampleInputName" placeholder="Введіть опис"
+                                               required>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" name="slug" class="form-control"  value="{{ $doctor['slug']}}" placeholder="url" readonly>
+                                        <input type="text" name="slug" class="form-control" value="{{ $doctor['slug']}}"
+                                               placeholder="url" readonly>
                                     </div>
 
                                 </div>

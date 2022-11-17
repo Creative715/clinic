@@ -10,7 +10,8 @@
                 <h3>Услуги</h3>
                 <ul class="list-group list-group-flush">
                     @foreach($services1 as $service)
-                        <li class="list-group-item"><a href="{{ route('pagero', $service->slug) }}"> {{ $service->title }}</a></li>
+                        <li class="list-group-item"><a
+                                href="{{ route('pagero', $service->slug) }}"> {{ $service->title }}</a></li>
                     @endforeach
                 </ul>
             </div>
@@ -18,7 +19,8 @@
                 <h3>Консультация</h3>
                 <ul class="list-group list-group-flush">
                     @foreach($consults1 as $consult)
-                        <li class="list-group-item"><a href="{{ route('pagero', $consult->slug) }}"> {{ $consult->title }}</a></li>
+                        <li class="list-group-item"><a
+                                href="{{ route('pagero', $consult->slug) }}"> {{ $consult->title }}</a></li>
                     @endforeach
                 </ul>
             </div>
@@ -26,8 +28,11 @@
                 <h3>О нас</h3>
                 <ul class="list-group list-group-flush">
                     @foreach($abouts1 as $about)
-                        <li class="list-group-item"><a href="{{ route('pagero', $about->slug) }}"> {{ $about->title }}</a></li>
+                        <li class="list-group-item"><a
+                                href="{{ route('pagero', $about->slug) }}"> {{ $about->title }}</a></li>
                     @endforeach
+                    <li class="list-group-item"><a href="{{ route('testimonial.index') }}">Отзивы</a></li>
+                    <li class="list-group-item"><a href="{{ route('doctors') }}">Врачи</a></li>
                     <li class="list-group-item"><a href="#call_us">Контакт</a></li>
                 </ul>
                 <button onclick="topFunction()" id="toTop" title="Вверх"><i

@@ -1,10 +1,10 @@
 <section class="intro">
     <div class="container">
-        <h2 class="text-center">Фахівці центру</h2>
+        <h2 class="text-center">Специалисты центра</h2>
         <div class="hr_blue" style="margin: 0 auto;"></div>
         <p class="lead">
-            У нашому центрі працюють лікарі з багаторічним досвідом роботи. Більшість з них — члени
-            всеукраїнських <br> та міжнародних асоціацій.
+            В нашем центре работают врачи с многолетним опытом работы. Большинство из них - члены всеукраинских
+            и международных ассоциаций.
         </p>
     </div>
 </section>
@@ -21,7 +21,7 @@
                             <h3 class="card-title">{{ $doctor->name }}</h3>
                             <p class="card-text">{!! $doctor->getContentPreview() !!}</p>
                             <a href="{{ route('doctors.more', $doctor->slug) }}"
-                               class="btn btn-info">Докладніше</a>
+                               class="btn btn-info">Подробнее</a>
                         </div>
                     </div>
                     <div class="my-3"></div>
@@ -29,8 +29,8 @@
             @endforeach
         </div>
         <div class="row justify-content-center mt-5">
-            <a href="{{ route('doctors') }}" class="btn btn-success col col-md-4 text-uppercase">всі фахівці
-                центру <i class="fa-solid fa-align-left"></i></a>
+            <a href="{{ route('doctors') }}" class="btn btn-success col col-md-4 text-uppercase">все специалисты центра
+                <i class="fa-solid fa-align-left"></i></a>
         </div>
     </div>
 </section>

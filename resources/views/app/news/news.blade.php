@@ -26,14 +26,15 @@
     </section>
     <section id="page" class="page" style="min-height: 800px">
         <div class="container">
-            <div class="row">
+            <div class="row justify-content-center">
                 <a href="{{ url('/ua/privatna-shvidka-dopomoga') }}" type="button"
                    class="btn btn-success py-3 text-uppercase"><h4 style="color: #fff">Приватна швидка допомога <i
                             class="fa-solid fa-hand-point-right"></i> +380970817777</h4></a>
                 <div class="my-5"></div>
-                <h3> {{ $news->title }}</h3>
-                <img data-src="{{ $news->img }}" src="{{ asset('/img/200.gif') }}" class="img-thumbnail" title="{{ $news->title }}"
-                     alt="{{ $news->title }}">
+                <h2> {{ $news->title }}</h2>
+                <div class="col-md-6 my-5"><img data-src="{{ $news->img }}" src="{{ asset('/img/200.gif') }}"
+                                                class="img-thumbnail" title="{{ $news->title }}"
+                                                alt="{{ $news->title }}"></div>
                 <p class="lead"> {!! $news->content !!}</p>
             </div>
         </div>

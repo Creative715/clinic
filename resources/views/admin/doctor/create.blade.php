@@ -43,7 +43,8 @@
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="name">Прізвище та Ім'я</label>
-                                        <input type="text" name="name" class="form-control" placeholder="Введіть прізвище та ім'я" required>
+                                        <input type="text" name="name" class="form-control"
+                                               placeholder="Введіть прізвище та ім'я" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Фото</label>
@@ -51,7 +52,8 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Спеціальність</label>
-                                        <input type="text" name="speciality" class="form-control" placeholder="Спеціальність" required>
+                                        <input type="text" name="speciality" class="form-control"
+                                               placeholder="Спеціальність" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Іноформація про лікаря</label>
@@ -59,11 +61,13 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Короткий опис для (SEO)</label>
-                                        <input type="text" name="description" class="form-control" id="exampleInputName" placeholder="Введіть опис" required>
+                                        <input type="text" name="description" class="form-control" id="exampleInputName"
+                                               placeholder="Введіть опис" required>
                                     </div>
                                     <div class="form-group">
                                         <label>Адреса сторінки (url)</label>
-                                        <input type="text" name="slug" class="form-control"  placeholder="Додається автоматично" readonly>
+                                        <input type="text" name="slug" class="form-control"
+                                               placeholder="Додається автоматично" readonly>
                                     </div>
 
                                 </div>

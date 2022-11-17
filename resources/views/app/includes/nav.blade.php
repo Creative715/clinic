@@ -17,6 +17,7 @@
                     <a href="{{ route('page', $about->slug) }}">{{ $about->title }}</a>
                 @endforeach
                 <h4><a href="{{ route('testimonial.index') }}">Відгуки</a></h4>
+                <h4><a href="{{ route('doctors') }}">Лікарі</a></h4>
                 <h4><a href="#call_us">Контакти</a></h4>
             </div>
         </div>
@@ -26,15 +27,18 @@
                     <button class="btn btn-link nav-link px-2 link-dark dropbtn dropdown-toggle">послуги</button>
                     <div class="dropdown-menu dropdown-content">
                         @foreach($services as $service)
-                        <a class="dropdown-item" href="{{ route('page', $service->slug) }}">{{ $service->title }}</a>
+                            <a class="dropdown-item"
+                               href="{{ route('page', $service->slug) }}">{{ $service->title }}</a>
                         @endforeach
                     </div>
                 </div>
                 <div class="dropdown">
-                    <button class="btn btn-link nav-link px-2 link-dark dropbtn dropdown-toggle">консультація у лікаря</button>
+                    <button class="btn btn-link nav-link px-2 link-dark dropbtn dropdown-toggle">консультація у лікаря
+                    </button>
                     <div class="dropdown-menu dropdown-content">
                         @foreach($consults as $consult)
-                        <a class="dropdown-item" href="{{ route('page', $consult->slug) }}">{{ $consult->title }}</a>
+                            <a class="dropdown-item"
+                               href="{{ route('page', $consult->slug) }}">{{ $consult->title }}</a>
                         @endforeach
                     </div>
                 </div>
@@ -44,11 +48,11 @@
                         @foreach($abouts as $about)
                             <a class="dropdown-item" href="{{ route('page', $about->slug) }}">{{ $about->title }}</a>
                         @endforeach
-                            <a class="dropdown-item" href="{{ route('doctors') }}">Лікарі</a>
-                            <a class="dropdown-item" href="{{ route('news') }}">Новини</a>
+                        <a class="dropdown-item" href="{{ route('doctors') }}">Лікарі</a>
+                        <a class="dropdown-item" href="{{ route('testimonial.index') }}">Відгуки</a>
+                        <a class="dropdown-item" href="{{ route('news') }}">Новини</a>
                     </div>
                 </div>
-                <li><a href="{{ route('testimonial.index') }}" class="nav-link px-2 link-dark">Відгуки</a></li>
                 <li><a href="#call_us" class="nav-link px-2 link-dark">Контакти</a></li>
             </ul>
         </div>

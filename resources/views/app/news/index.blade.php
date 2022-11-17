@@ -22,6 +22,13 @@
             </div>
         </div>
     </section>
+    <div class="container">
+        <div class="row justify-content-center my-4">
+            <a href="{{ url('/ua/privatna-shvidka-dopomoga') }}" type="button"
+               class="btn btn-success py-3 text-uppercase"><h4>Приватна швидка допомога <i
+                        class="fa-solid fa-hand-point-right"></i> +380970817777</h4></a>
+        </div>
+    </div>
     @include('app.includes.news')
     @include('app.includes.call_us')
     @include('app.includes.footer')

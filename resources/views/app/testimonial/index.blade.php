@@ -13,7 +13,9 @@
                     </nav>
                     <h2>Відгуки про клініку Healing</h2>
                     <div class="hr_blue"></div>
-                    <p class="lead">Приватна клініка «Healing» співпрацює з найкращими спеціалістами своєї справи, створена з урахуванням успішного досвіду світової медицини, для надання професійної допомоги пацієнтам з травмами та захворюваннями опорно-рухового апарату та супутньою патологією.
+                    <p class="lead">Приватна клініка «Healing» співпрацює з найкращими спеціалістами своєї справи,
+                        створена з урахуванням успішного досвіду світової медицини, для надання професійної допомоги
+                        пацієнтам з травмами та захворюваннями опорно-рухового апарату та супутньою патологією.
                         Healing – сучасна клініка ортопедії, травматології та нейрохірургії </p>
                 </div>
                 <div class="col-12 col-md-6 text-center"><img class="img-fluid" src="{{ asset('img/healing.jpg') }}"
@@ -43,7 +45,7 @@
                         <a href="{{ route('testimonial.more', $testimonial->slug) }}"
                            class="btn btn-info">Докладніше</a>
                     @endforeach
-                        <div class="mx-auto my-4" style="width: max-content">{{ $testimonials->links() }}</div>
+                    <div class="mx-auto my-4" style="width: max-content">{{ $testimonials->links() }}</div>
                 </div>
             </div>
             <div class="my-2">
@@ -54,8 +56,10 @@
                 @csrf
                 <div class="form-group">
                     <input type="text" class="form-control" id="name" name="name" placeholder="Ваше ім'я">
-                    <textarea class="form-control" name="body" id="body" cols="30" rows="5" placeholder="Опишіть свої враження від перебування в нашій клініці ..."></textarea>
-                    <button style="width: 100%;" class="btn btn-lg btn-success btn-main" href="#">Надіслати відгук</button>
+                    <textarea class="form-control" name="body" id="body" cols="30" rows="5"
+                              placeholder="Опишіть свої враження від перебування в нашій клініці ..."></textarea>
+                    <button style="width: 100%;" class="btn btn-lg btn-success btn-main" href="#">Надіслати відгук
+                    </button>
                 </div>
             </form>
         </div>

@@ -1,17 +1,17 @@
 <div id="HealingCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#HealingCarousel" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
+                aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#HealingCarousel" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
+                aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#HealingCarousel" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
+                aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
             <img class="bd-placeholder-img d-none d-sm-block d-sm-none d-md-block" width="100%"
-                height="100%" src="{{ asset('/img/slidebg01.jpg') }}" alt="" aria-hidden="true"
-                preserveAspectRatio="xMidYMid slice" focusable="false">
+                 height="100%" src="{{ asset('/img/slidebg01.jpg') }}" alt="" aria-hidden="true"
+                 preserveAspectRatio="xMidYMid slice" focusable="false">
             <div class="container">
                 <div class="carousel-caption text-start">
                     <h2>Консультація лікаря:</h2>
@@ -27,8 +27,8 @@
         </div>
         <div class="carousel-item">
             <img class="bd-placeholder-img d-none d-sm-block d-sm-none d-md-block" width="100%"
-                height="100%" src="{{ asset('/img/slidebg02.jpg') }}" alt="" aria-hidden="true"
-                preserveAspectRatio="xMidYMid slice" focusable="false">
+                 height="100%" src="{{ asset('/img/slidebg02.jpg') }}" alt="" aria-hidden="true"
+                 preserveAspectRatio="xMidYMid slice" focusable="false">
             <div class="container">
                 <div class="carousel-caption text-start">
                     <h3>Консультації на дому</h3>
@@ -41,8 +41,8 @@
         </div>
         <div class="carousel-item">
             <img class="bd-placeholder-img d-none d-sm-block d-sm-none d-md-block" width="100%"
-                height="100%" src="{{ asset('/img/slidebg03.jpg') }}" alt="" aria-hidden="true"
-                preserveAspectRatio="xMidYMid slice" focusable="false">
+                 height="100%" src="{{ asset('/img/slidebg03.jpg') }}" alt="" aria-hidden="true"
+                 preserveAspectRatio="xMidYMid slice" focusable="false">
 
             <div class="container">
                 <div class="carousel-caption text-start">

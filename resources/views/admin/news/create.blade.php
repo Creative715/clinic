@@ -43,7 +43,8 @@
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Заголовок новин</label>
-                                        <input type="text" name="title" class="form-control" placeholder="Введіть назву" required>
+                                        <input type="text" name="title" class="form-control" placeholder="Введіть назву"
+                                               required>
                                     </div>
                                     <div class="form-group">
                                         <label for="content">Текст новин</label>
@@ -51,7 +52,8 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="description">Опис сторінки (SEO)</label>
-                                        <input type="text" name="description" class="form-control" id="description" placeholder="Введіть опис" required>
+                                        <input type="text" name="description" class="form-control" id="description"
+                                               placeholder="Введіть опис" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="img">Зображення</label>
@@ -60,7 +62,8 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Адреса сторінки (url)</label>
-                                    <input type="text" name="slug" class="form-control"  placeholder="Додається автоматично" readonly>
+                                    <input type="text" name="slug" class="form-control"
+                                           placeholder="Додається автоматично" readonly>
                                 </div>
                                 <!-- /.card-body -->
                                 <div class="card-footer">

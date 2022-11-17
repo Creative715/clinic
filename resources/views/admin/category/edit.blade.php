@@ -44,11 +44,13 @@
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Назва</label>
-                                        <input type="text" name="title" value="{{ $category['title'] }}" class="form-control" placeholder="Введіть назву" required>
+                                        <input type="text" name="title" value="{{ $category['title'] }}"
+                                               class="form-control" placeholder="Введіть назву" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Slug</label>
-                                        <input type="text" name="slug" class="form-control"  value="{{ $category['slug']}}" placeholder="url" required>
+                                        <input type="text" name="slug" class="form-control"
+                                               value="{{ $category['slug']}}" placeholder="url" required>
                                     </div>
 
                                 </div>

@@ -39,7 +39,8 @@
                             <div class="icon">
                                 <i class="ion ion-android-clipboard"></i>
                             </div>
-                            <a href="{{ route('page.index') }}" class="small-box-footer">Редагувати сторінки <i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="{{ route('page.index') }}" class="small-box-footer">Редагувати сторінки <i
+                                    class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->
@@ -54,7 +55,8 @@
                             <div class="icon">
                                 <i class="ion ion-android-list"></i>
                             </div>
-                            <a href="{{ route('category.index') }}" class="small-box-footer">Редагувати категорії <i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="{{ route('category.index') }}" class="small-box-footer">Редагувати категорії <i
+                                    class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->
@@ -69,7 +71,8 @@
                             <div class="icon">
                                 <i class="ion ion-person-add"></i>
                             </div>
-                            <a href="{{ route('doctor.index') }}" class="small-box-footer">Редагувати лікарів <i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="{{ route('doctor.index') }}" class="small-box-footer">Редагувати лікарів <i
+                                    class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->
@@ -99,7 +102,8 @@
                             <div class="icon">
                                 <i class="ion ion-pie-graph"></i>
                             </div>
-                            <a href="{{ route('news.index') }}" class="small-box-footer">Редагувати новини<i class="fas fa-arrow-circle-right"></i></a>
+                            <a href="{{ route('news.index') }}" class="small-box-footer">Редагувати новини<i
+                                    class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->
