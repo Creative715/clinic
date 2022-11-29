@@ -13,8 +13,7 @@
                             <li class="breadcrumb-item active" aria-current="page">{{ $doctors->name }}</li>
                         </ol>
                     </nav>
-                    <h2>{{ $doctors->title }}</h2>
-
+                    <h2>{{ $doctors->name }}</h2>
                     <div class="hr_blue"></div>
                     <p class=lead">{!! $doctors->getContentPreview() !!}</p>
                     <div class="my-5"></div>
@@ -28,7 +27,7 @@
     <section id="page" class="page" style="min-height: 800px">
         <div class="container">
             <div class="row justify-content-center">
-                <a href="{{ url('/ua/privatna-shvidka-dopomoga') }}" type="button"
+                <a href="{{ url('/ua/nevidkladna-medicna-dopomoga') }}" type="button"
                    class="btn btn-success py-3 text-uppercase"><h4 style="color: #fff">Приватна швидка допомога <i
                             class="fa-solid fa-hand-point-right"></i> +380970817777</h4></a>
                 <div class="my-5"></div>

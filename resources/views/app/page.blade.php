@@ -25,7 +25,7 @@
     <section id="page" class="page">
         <div class="container">
             <div class="row">
-                <a href="{{ url('/ua/privatna-shvidka-dopomoga') }}" type="button"
+                <a href="{{ url('/ua/nevidkladna-medicna-dopomoga') }}" type="button"
                    class="btn btn-success py-3 text-uppercase"><h4 style="color: #fff">Приватна швидка допомога <i
                             class="fa-solid fa-hand-point-right"></i> +380970817777</h4></a>
                 <div class="my-1"></div>

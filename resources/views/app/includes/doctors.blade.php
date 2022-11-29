@@ -19,6 +19,7 @@
                                  title="{{ $doctor->name }}"
                                  alt="{{ $doctor->name }}">
                             <h3 class="card-title">{{ $doctor->name }}</h3>
+                            <h4>Спеціальність: {{ $doctor->speciality }}</h4>
                             <p class="card-text">{!! $doctor->getContentPreview() !!}</p>
                             <a href="{{ route('doctors.more', $doctor->slug) }}"
                                class="btn btn-info">Докладніше</a>
